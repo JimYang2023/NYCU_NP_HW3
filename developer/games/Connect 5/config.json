@@ -1,0 +1,7 @@
+{
+    "name": "Connect 5",
+    "developer": "developer1",
+    "version": "1.0.5",
+    "description": "This game is support for two player. The player win if there exist connection of five piece.",
+    "players": 2
+}

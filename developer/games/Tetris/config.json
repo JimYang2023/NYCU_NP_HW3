@@ -1,0 +1,7 @@
+{
+    "name": "Tetris",
+    "developer": "developer1",
+    "version": "1.0.10",
+    "description": "This game support for two player. Block will increase speed in game process. If one of player game over, game end.",
+    "players": 2
+}
