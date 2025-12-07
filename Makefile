@@ -75,13 +75,14 @@ clean_developer:
 
 clean:
 	@cd $(SERVER_FLD) && \
-	rm -rf __pycache__ ./$(TOOL_DIR) && \
-	rm -f $(DB_NAME)
+	rm -f $(DB_NAME) \
+	rm -rf ./$(TOOL_DIR)
 	@cd $(DEVELOPER_FLD) && \
-	rm -rf __pycache__ ./$(TOOL_DIR)
+	rm -rf ./$(TOOL_DIR)
 	@cd $(PLAYER_FLD) && \
-	rm -rf __pycache__ ./$(TOOL_DIR)
+	rm -rf ./$(TOOL_DIR)
 	@$(MAKE) clean_player
+	@$(MAKE) clean_server
 
 
 # =========================
