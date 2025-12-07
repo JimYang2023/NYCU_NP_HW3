@@ -381,7 +381,7 @@ class PlayerClient:
 
     def game_stage(self, game_name) -> None: 
 
-        room_selection = ["Wating State", "Exit Room"]
+        room_selection = ["Watting State", "Exit Room"]
         sel = self.choose("Room Action", room_selection) - 1
         self.client.send({"room_action":sel})
         if sel == 1:
