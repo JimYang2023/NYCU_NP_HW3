@@ -246,6 +246,9 @@ class ClientHandler:
         if not game_cfg:
             self.send({"status":"Fail", "msg":"Game removed from server"})
             return None, -1
+        elif room[2] == game_cfg.get('players'):
+            self.send({"status":"Fail", "msg":"Room is full. Please choose others room."})
+            return None, -1
 
         # send server game info to client
         self.send({"status":"OK", "game":game_cfg})
