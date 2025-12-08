@@ -41,7 +41,8 @@ make server
 
 ### 開發者
 
-請依照server執行對應的位置，輸入指令。`linux1` 可以取代為 `linux2`, `linux3`, `linux4`，會連線到不同位置。
+請依照server執行對應的位置，輸入指令。`linux1` 可以取代為 `linux2`, `linux3`, `linux4`，會連線到不同位置。若無`SERVER`輸入則會以本地端坐為連線目標。\
+若需要修改連線的port，請修改 Makefile 檔案中的`SERVER_PORT`。
 
 ```bash
 make developer SERVER=linux1
@@ -50,7 +51,8 @@ make developer SERVER=linux1
 
 ### 玩家
 
-請依照server執行對應的位置，輸入指令。`linux1` 可以取代為 `linux2`, `linux3`, `linux4`，會連線到不同位置。
+請依照server執行對應的位置，輸入指令。`linux1` 可以取代為 `linux2`, `linux3`, `linux4`，會連線到不同位置。若無`SERVER`輸入則會以本地端坐為連線目標。\
+若需要修改連線的port，請修改 Makefile 檔案中的`SERVER_PORT`。
 
 ```bash
 make player SERVER=linux1
